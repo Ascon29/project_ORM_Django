@@ -14,11 +14,3 @@ RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
-
-FROM nginx:latest
-
-RUN mkdir -p /app/staticfiles
-
-COPY nginx.conf /etc/nginx/nginx.conf
-
-EXPOSE 80
