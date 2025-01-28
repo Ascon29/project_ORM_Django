@@ -2,6 +2,6 @@ FROM nginx:latest
 
 RUN mkdir -p /app/staticfiles
 
-COPY nginx.connf /etc/nginx/nginx.cong
+COPY nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 80
